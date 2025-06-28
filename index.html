@@ -7,6 +7,71 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>This will be my form!</h1>
+
+    <div id="photo-section">
+
+        <div class="opaque-box">
+            <div>
+                <img class="odin-logo" src="assets/odin-lined.png">
+                <h1>Odin</h1>
+            </div>
+        </div>
+
+        <div class="credit-box">
+            <p>Photo by <a href="https://unsplash.com/@cecilia_frost?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Cecilia Frost</a> on <a href="https://unsplash.com/photos/a-white-lighthouse-on-top-of-a-building-M9D3poaqPzk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+        </div>
+
+    </div>
+
+    <div id="content-section">
+
+        <div class="content-top">
+            <p>This is your only and last opportunity to make something out of yourself. Everything else has failed and that is <em>exclusively</em> because you did not have the tools you needed to get the job done.</p>
+            <p>But now we can <em>give you the tools</em>.</p>    
+        </div>
+
+        <!-- This section needs to contain the form input elements and a CTA heading above it -->
+        <!-- The wrapper at the highest level here todo-->
+        <div class="content-mid">
+
+            <h2>Let's get this s#*t!</h2>
+
+            <form id="login_form" action="" method="post">
+                <div class="form-elm-group">
+                    <label for="first_name">First Name</label>
+                    <input id="first_name" name="user_first_name" type="text">
+                </div>
+                <div class="form-elm-group">
+                    <label for="last_name">Last Name</label>
+                    <input id="last_name" name="user_last_name" type="text">
+                </div>
+                <div class="form-elm-group">
+                    <label for="email">Email</label>
+                    <input id="email" name="user_email" type="email" required>
+                </div>
+                <div class="form-elm-group">
+                    <label for="phone">Phone Number</label>
+                    <input id="phone" name="user_phone" type="number">
+                </div>
+                <div class="form-elm-group">
+                    <label for="password">Password</label>
+                    <input id="password" name="user_pwd" type="password" required minlength="8">
+                </div>
+                <div class="form-elm-group">
+                    <label for="c_password">Confirm Password</label>
+                    <input id="c_password" name="user_pwd" type="password" required minlength="8">
+                </div>
+            </form>
+
+        </div>
+
+        <div class="content-bottom">
+            <button form="login_form" type="submit">Create Account</button>
+            <p>Already Have an Account? <a href="index.html">Log in</a></p>
+        </div>
+    </div>
+
+    
+
 </body>
 </html>
